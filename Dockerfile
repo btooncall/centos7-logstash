@@ -11,6 +11,8 @@ RUN wget -q https://download.elastic.co/logstash/logstash/packages/centos/logsta
 ADD logstash.conf /etc/
 WORKDIR /opt/logstash
 
+ENV JAVA_HOME /etc/alternatives/jre_1.7.0_openjdk
+
 EXPOSE 12201 514 514/udp
 
 VOLUME [ "/var/log/logstash/"]
