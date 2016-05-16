@@ -13,7 +13,7 @@ WORKDIR /opt/logstash
 
 ENV JAVA_HOME /etc/alternatives/jre_1.7.0_openjdk
 
-EXPOSE 12201
+EXPOSE 12201/udp
 
 VOLUME [ "/var/log/logstash/"]
 
